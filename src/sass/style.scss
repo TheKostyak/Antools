@@ -1,0 +1,19 @@
+@import "base/variables";
+@import "libs/bootstrap-reboot.min";
+@import "base/fonts";
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1240px;
+}
