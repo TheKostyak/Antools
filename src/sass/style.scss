@@ -6,10 +6,17 @@ body {
     margin: 0;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
+    background-color: $main-color;
 }
 
 img {
     max-width: 100%;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
 .container{
@@ -17,3 +24,4 @@ img {
     padding: 0 15px;
     max-width: 1240px;
 }
+@import "blocks/header";
