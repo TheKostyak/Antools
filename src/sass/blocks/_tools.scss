@@ -16,4 +16,18 @@
         text-align: center;
         color: $main-text;
     }
+
+    .loadmore {
+        display: block;
+        margin: 0 auto;
+        margin-top: 100px;
+        background: $main-color;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+        width: 185px;
+        height: 65px;
+        color: $second-color;
+        font-weight: 500;
+        font-size: 20px;
+    }
 }

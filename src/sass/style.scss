@@ -50,10 +50,10 @@ ul {
         padding: 35px;
 
         &:hover {
-            backdrop-filter: blur(50px);
             background: rgba(30, 37, 43, .5);
             border: rgb(34, 39, 44) solid 3px;
             border-radius: 15px;
+            padding: 25px;
             .app__descr{
                 margin: 20px 0;
             }
@@ -132,3 +132,4 @@ ul {
 @import "blocks/header";
 @import "blocks/about";
 @import "blocks/tools";
+@import "blocks/brands";
