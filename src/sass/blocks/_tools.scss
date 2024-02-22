@@ -1,0 +1,19 @@
+.tools {
+    margin-top: 200px;
+
+    &__title {
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 130%;
+        text-align: center;
+        color: $second-text;
+    }
+
+    &__subtitle {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 167%;
+        text-align: center;
+        color: $main-text;
+    }
+}
