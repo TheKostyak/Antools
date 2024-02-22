@@ -35,6 +35,10 @@ ul {
     color: #fdf5ff;
     border: none;
     border-radius: 8px;
+    transition: all .3s;
+    &:hover{
+        transform: scale(1.05);
+    }
 }
 
 .apps {
@@ -133,3 +137,4 @@ ul {
 @import "blocks/about";
 @import "blocks/tools";
 @import "blocks/brands";
+@import "blocks/newcomer";
