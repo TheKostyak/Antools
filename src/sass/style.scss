@@ -9,6 +9,11 @@ body {
     background-color: $main-color;
 }
 
+a{  
+    text-decoration: none;
+    color: inherit;
+}
+
 img {
     max-width: 100%;
 }
@@ -52,9 +57,9 @@ ul {
         display: flex;
         flex-direction: column;
         padding: 35px;
-
+        transition: all .3s;
         &:hover {
-            background: rgba(30, 37, 43, .5);
+            background: rgba(40, 48, 54, .6);
             border: rgb(34, 39, 44) solid 3px;
             border-radius: 15px;
             padding: 25px;
@@ -138,3 +143,4 @@ ul {
 @import "blocks/tools";
 @import "blocks/brands";
 @import "blocks/newcomer";
+@import "blocks/team";
