@@ -1,0 +1,39 @@
+.footer {
+    display: flex;
+    padding: 110px 70px;
+    color: $main-text;
+
+    &__info {
+        max-width: 260px;
+    }
+
+    &__copy {
+        margin-top: 25px;
+        color: $second-text;
+    }
+
+    &__about {
+        margin-top: 21px;
+    }
+
+    &__nav {
+        margin-left: 155px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        margin-right: 120px;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 20px;
+        color: $second-text;
+    }
+    &__content{
+        margin-top: 20px;
+    }
+}
