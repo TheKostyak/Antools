@@ -1,0 +1,41 @@
+.contribution {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 130%;
+        color: $second-text;
+    }
+
+    &__descr {
+        max-width: 430px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 167%;
+        color: $main-text;
+        margin-top: 25px;
+    }
+
+    .subscribe {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 12px;
+        width: 550px;
+        margin-top: 100px;
+        background-color: #283036;
+        border-radius: 15px;
+
+        input {
+            background: transparent;
+            border: none;
+            outline: 0;
+            caret-color: $main-text;
+            color: $main-text;
+        }
+    }
+}
