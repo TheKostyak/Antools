@@ -51,16 +51,16 @@
             height: 50px;
             margin: 0;
         }
-        .about__search{
-            display: flex;
-            align-items:center;
-            height: 100%;
-            &::before{
-                content: url("../icons/search-icon.svg");margin-left: 18px;
-                display: block;
-                width: 24px;
-                height: 24px;
-            }
+    }
+    &__search{
+        display: flex;
+        align-items:center;
+        height: 100%;
+        &::before{
+            content: url("../icons/search-icon.svg");margin-left: 18px;
+            display: block;
+            width: 24px;
+            height: 24px;
         }
     }
 
