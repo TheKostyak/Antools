@@ -31,7 +31,7 @@
     &__apps{
         margin: 0;
         grid-template-rows: 260px;
-        grid-template-columns: repeat(2, 285px);
+        grid-template-columns: repeat(auto-fill, 285px);
         gap: 25px;
         .app__descr{
             font-size: 14px;
