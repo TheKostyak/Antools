@@ -4,19 +4,34 @@
 
 .slider {
     position: relative;
-&__item{
-    margin: 0 auto;
-}
+
+    &__item {
+        margin: 0 auto;
+        display: none;
+
+        &_active {
+            display: block;
+        }
+    }
+
     &__content {
         display: flex;
         justify-content: center;
     }
 
     &__arrow {
+        width: 100px;
+        height: 100%;
         position: absolute;
-        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         top: 50%;
+        bottom: 50%;
         left: 0;
+        transform: translate(0%, -50%);
+        z-index: 20;
 
         span {
             display: flex;
@@ -35,12 +50,14 @@
         }
 
         &_right {
-            transform: rotateY(180deg);
+            left: unset;
+            transform: translate(50%, -50%) rotateY(180deg);
             right: 0;
         }
     }
 
     &__text {
+        min-width: 395px;
         position: relative;
         margin-left: 60px;
         margin-top: 155px;
@@ -58,18 +75,21 @@
             content: url("../icons/quotes-icon.svg");
         }
     }
-    &__btns{
+
+    &__btns {
         display: flex;
         justify-content: center;
         gap: 18px;
         margin-top: 100px;
     }
-    &__btn{
+
+    &__btn {
         width: 45px;
         height: 6px;
         background-color: #283036;
         border-radius: 4px;
-        &_active{
+
+        &_active {
             background-color: $second-color;
             height: 8px;
         }
