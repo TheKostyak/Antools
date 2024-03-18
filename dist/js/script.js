@@ -12,7 +12,19 @@ burger.addEventListener("click", (e) => {
     burger.classList.toggle("burger_active");
     nav.classList.toggle("nav_active");
     overlay.classList.toggle("overlay_active");
+    // adding event listener to each navigation link to close menu by clicking on the link
+    const navActive = document.querySelector(".nav_active");
+    navActive.children[0].childNodes.forEach((item)=>{
+        item.addEventListener("click", () => {
+            burger.classList.remove("burger_active");
+            nav.classList.remove("nav_active");
+            overlay.classList.remove("overlay_active");
+        });
+    });
 });
+
+
+
 overlay.addEventListener("click", () => {
     burger.classList.toggle("burger_active");
     nav.classList.toggle("nav_active");
@@ -52,11 +64,11 @@ function activatePrevSlide() {
 const changeSlides = setInterval(() => {
     activateNextSlide();
 }, 3000);
-arrowLeft.addEventListener("click", ()=>{
+arrowLeft.addEventListener("click", () => {
     clearInterval(changeSlides);
     activatePrevSlide();
 });
-arrowRight.addEventListener("click", ()=>{
+arrowRight.addEventListener("click", () => {
     clearInterval(changeSlides);
     activateNextSlide();
 });
